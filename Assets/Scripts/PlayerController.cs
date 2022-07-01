@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     public float speed = 10.0f;
     public float xRange = 10.0f;
     public GameObject projectilePrefab;
+
+    public int contBar = 6;
+    public int i = 0;
     void Start()
     {
         
@@ -17,6 +20,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        while(i <= 504){
+            Debug.Log(i);
+            i++;
+        }
+
         AtivateProjectile();
         LimitAreaPlayer();
         MovePlayer();
